@@ -1,0 +1,1 @@
+# Lite_HRNet_ONNX_config
