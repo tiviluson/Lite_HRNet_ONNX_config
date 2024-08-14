@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: litehrnet-svc
+spec:
+  type: NodePort
+  selector:
+    app: litehrnet-appq
+  ports:
+  - protocol: TCP
+    port: 8000                
+    # targetPort: uvicorn-port 
+    nodePort: 30000 
